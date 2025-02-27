@@ -26,7 +26,7 @@ public class BasePage {
      * Se inicializa inmediatamente con una instancia dew WebDriverWait utilizando el 'driver' estático
      * WebDriverWait se usa para poner esperas explícitas en los elementos web
      */
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
  
     /* 
      * Configura el WebDriver para Chrome usando WebDriverManager.
@@ -53,7 +53,7 @@ public class BasePage {
     public static void closeBrowser() {
         driver.quit();
     }
-
+    //Buscar ElementWeb por atributo Xpath
     private WebElement Find(String locator) {
         return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
     }
@@ -61,17 +61,35 @@ public class BasePage {
     public void clickElement(String locator) {
         Find(locator).click();
     }
-
+    //Buscar ElementWeb por atributo Name
     private WebElement Find2(String locator) {
         return wait.until(ExpectedConditions.presenceOfElementLocated(By.name(locator)));
         
-     }
+    }
 
-     public void clickElement2(String locator) {
+    public void clickElement2(String locator) {
         Find2(locator).click();
+    }
+    //Buscar ElementWeb por atributo Id
+    private WebElement Find3(String locator) {
+        return wait.until(ExpectedConditions.presenceOfElementLocated(By.id(locator)));
+        
+    }
+
+    public void clickElementId(String locator) {
+        Find3(locator).click();
     }
 
 
+    
+    @SuppressWarnings("CallToPrintStackTrace")
+    public static void waitSeconds(int seconds) {
+		try {
+			Thread.sleep(seconds * 1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 
     public void write(String locator, String keysToSend) {
         Find(locator).clear();

@@ -1,24 +1,30 @@
 Feature: Compra Venta COMEX
 
+
 Background: Ingreso a HomePage Banco Estado
     Given I navigate to www.bancoestado--qa.sandbox.my.salesforce.com
-
-Scenario: Scenario name
-    Given I navigate to www.freerangetesters.com
-    When I go to a section using the navigation bar
-    
-
-Scenario: Courser are presented correctly to potential customers
-     Given I navigate to www.freerangetesters.com
-     When I go to cousers using the navigation bar
-     And Select introduction the testing1
-     
-@test
-Scenario: Ingreso Cliente Nuevo Banco Estado
     When I go to cousers using the navigation bar
-    And Elegir plan
-    And Ingreso HomePage
+
+@test
+Scenario: Oportunidad Caja contra Caja
     And Ingreso a objeto Cliente Nuevo
-    And Ingreso Cuenta Nueva
     Then Crear nueva Oportunidad
-    #Then Oportinidad Creada Correctamente
+
+@C_CCMN
+Scenario: Oportunidad Caja contra CCMN
+  Then Oportunidad Caja contra CCMN 
+    
+@Cahorro_Caja
+Scenario: Oportunidad Cuenta de Ahorro contra Caja
+  Then Oportunidad Cuenta de Ahorro contra Caja
+  #When I go to cousers using the navigation bar
+  #And Select introduction the testing1
+
+@Caja_CCMN_Caja_CCMX
+Scenario: Caja_CCMN contra Caja_CCMX
+  Then Oportunidad Caja_CCMN contra Caja_CCMX
+     
+
+
+    
+    

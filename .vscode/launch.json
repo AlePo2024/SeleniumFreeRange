@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open ExtentHtml.html",
+            "file": "c:\\Users\\Alejandro\\Documents\\GitHub\\SeleniumFreeRange\\test-reports 14-feb.-25 14-48-20\\test-output\\HtmlReport\\ExtentHtml.html"
+        }
+    ]
+}

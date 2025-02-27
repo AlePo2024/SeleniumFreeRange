@@ -18,7 +18,7 @@ public class Oportunidad extends BasePage{
             scenario.log("Oportunidad creada correctamente");
             final byte[] screenshot = ((TakesScreenshot) driver)
             .getScreenshotAs(OutputType.BYTES);
-        scenario.attach(screenshot, "image/png", "Vista Oprtunidad");
+        scenario.attach(screenshot, "image/png", "Vista Oportunidad");
         }
 
     }    
