@@ -50,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>feb. 19, 2025 02:57:05 p. m.</span>
+			<span class='label blue darken-3 suite-start-time'>feb. 27, 2025 09:17:50 p. m.</span>
 			</a>
 		</ul>
 	</div>
@@ -77,7 +77,7 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Cahorro_Caja</a></li>
+					<li><a href='#'>@Caja_CCMN_Caja_CCMX</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -157,12 +157,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='50%'>
-                    <span class='strong'>2</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='75%'>
+                    <span class='strong'>3</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>
-                    2</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>
+                    1</span> steps failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -188,7 +188,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Compra Venta COMEX</span>
-						<span class='test-time'>feb. 19, 2025 02:57:06 p. m.</span>
+						<span class='test-time'>feb. 27, 2025 09:17:50 p. m.</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -201,14 +201,14 @@
 
 <div class='scenario node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 33.889</span>
+	<span class='duration right label'>00 00 52.236</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Oportunidad Cuenta de Ahorro contra Caja</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Caja_CCMN contra Caja_CCMX</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@Cahorro_Caja</span>
+				<span class='category label'>@Caja_CCMN_Caja_CCMX</span>
 		</div>
 	
 	<ul class='steps'>
@@ -223,27 +223,27 @@
 
 		</li>
 		<li test-id='5' class='node then Fail' status='Fail'>
-			<div class="step-name" title="(steps.StepsDefinition.createNewOpCAhoCaja())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then Oportunidad Cuenta de Ahorro contra Caja</div>
+			<div class="step-name" title="(steps.StepsDefinition.Caja_CCMN_Caja_CCMX())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then Oportunidad Caja_CCMN contra Caja_CCMX</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: /html/body/div[4]/div[1]/section/div[1]/div[1]/one-appnav/div/one-app-nav-bar/nav/div/one-app-nav-bar-item-root[2] (tried for 20 second(s) with 500 milliseconds interval)
+					<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[contains(@name,'Moneda origen')] (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
 	at pages.BasePage.Find(BasePage.java:58)
 	at pages.BasePage.clickElement(BasePage.java:62)
-	at pages.Op_Cuentas_vs_Cuentas_STCMod.opCAhorro_Caja(Op_Cuentas_vs_Cuentas_STCMod.java:58)
-	at steps.StepsDefinition.createNewOpCAhoCaja(StepsDefinition.java:55)
-	at ?.Oportunidad Cuenta de Ahorro contra Caja(file:///C:/Users/Alejandro/Documents/GitHub/SeleniumFreeRange/src/test/resources/FreeRangeNavegacion.feature:19)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=132.0.6834.111)
+	at pages.Op_Cuentas_vs_Cuentas_CTCMod.Caja_CCMN_Caja_CCMX(Op_Cuentas_vs_Cuentas_CTCMod.java:79)
+	at steps.StepsDefinition.Caja_CCMN_Caja_CCMX(StepsDefinition.java:60)
+	at ?.Oportunidad Caja_CCMN contra Caja_CCMX(file:///C:/Users/Alejandro/Documents/GitHub/SeleniumFreeRange/src/test/resources/FreeRangeNavegacion.feature:25)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@name,'Moneda origen')]"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4de88409d7f4eeebc2cf8c09b1ab7203, findElement {using=xpath, value=/html/body/div[4]/div[1]/section/div[1]/div[1]/one-appnav/div/one-app-nav-bar/nav/div/one-app-nav-bar-item-root[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\ALEJAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64186}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64186/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+Command: [c1c8c92b48e4bdf2a6dbcbd7780cb760, findElement {using=xpath, value=//button[contains(@name,'Moneda origen')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\ALEJAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55297/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c1c8c92b48e4bdf2a6dbcbd7780cb760
+	at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -263,8 +263,8 @@ Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
 	at pages.BasePage.Find(BasePage.java:58)
 	at pages.BasePage.clickElement(BasePage.java:62)
-	at pages.Op_Cuentas_vs_Cuentas_STCMod.opCAhorro_Caja(Op_Cuentas_vs_Cuentas_STCMod.java:58)
-	at steps.StepsDefinition.createNewOpCAhoCaja(StepsDefinition.java:55)
+	at pages.Op_Cuentas_vs_Cuentas_CTCMod.Caja_CCMN_Caja_CCMX(Op_Cuentas_vs_Cuentas_CTCMod.java:79)
+	at steps.StepsDefinition.Caja_CCMN_Caja_CCMX(StepsDefinition.java:60)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -335,36 +335,15 @@ Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </textarea>
 		</li>
-		<li test-id='6' class='node * Fail' status='Fail'>
-			<div class="step-name" title="(AFTER)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>steps.Oportunidad.tearDown(io.cucumber.java.Scenario)</div>
+		<li test-id='6' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>steps.Oportunidad.tearDown(io.cucumber.java.Scenario)</div>
 
 
 					<div class="node-step">Oportunidad creada correctamente</div>
-					<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=132.0.6834.111)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4de88409d7f4eeebc2cf8c09b1ab7203, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\ALEJAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64186}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64186/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:330)
-	at steps.Oportunidad.tearDown(Oportunidad.java:20)
-</textarea>
+					<div class="node-step">Vista Oportunidad</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded1.png' src='../screenshots/embedded1.png'>
+					</div>
 		</li>
 	</ul>
 </div>
@@ -412,7 +391,7 @@ Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Cahorro_Caja</span>
+						<span class='category-name'>@Caja_CCMN_Caja_CCMX</span>
 						<span class='category-status right'>
 						<span class='label fail'>1</span>
 						</span>
@@ -434,8 +413,8 @@ Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
 								</thead>
 								<tbody>
 									<tr>
-										<td>feb. 19, 2025 02:57:06 p. m.</td>
-										<td class='linked' test-id='2'>Oportunidad Cuenta de Ahorro contra Caja</td>
+										<td>feb. 27, 2025 09:17:50 p. m.</td>
+										<td class='linked' test-id='2'>Caja_CCMN contra Caja_CCMX</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -487,27 +466,27 @@ Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
 								</thead>
 								<tbody>
 									<tr>
-										<td>feb. 19, 2025 02:57:14 p. m.</td>
-										<td class='linked' test-id='5'>Then Oportunidad Cuenta de Ahorro contra Caja</td>
+										<td>feb. 27, 2025 09:18:00 p. m.</td>
+										<td class='linked' test-id='5'>Then Oportunidad Caja_CCMN contra Caja_CCMX</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: /html/body/div[4]/div[1]/section/div[1]/div[1]/one-appnav/div/one-app-nav-bar/nav/div/one-app-nav-bar-item-root[2] (tried for 20 second(s) with 500 milliseconds interval)
+											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[contains(@name,'Moneda origen')] (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
 	at pages.BasePage.Find(BasePage.java:58)
 	at pages.BasePage.clickElement(BasePage.java:62)
-	at pages.Op_Cuentas_vs_Cuentas_STCMod.opCAhorro_Caja(Op_Cuentas_vs_Cuentas_STCMod.java:58)
-	at steps.StepsDefinition.createNewOpCAhoCaja(StepsDefinition.java:55)
-	at ?.Oportunidad Cuenta de Ahorro contra Caja(file:///C:/Users/Alejandro/Documents/GitHub/SeleniumFreeRange/src/test/resources/FreeRangeNavegacion.feature:19)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=132.0.6834.111)
+	at pages.Op_Cuentas_vs_Cuentas_CTCMod.Caja_CCMN_Caja_CCMX(Op_Cuentas_vs_Cuentas_CTCMod.java:79)
+	at steps.StepsDefinition.Caja_CCMN_Caja_CCMX(StepsDefinition.java:60)
+	at ?.Oportunidad Caja_CCMN contra Caja_CCMX(file:///C:/Users/Alejandro/Documents/GitHub/SeleniumFreeRange/src/test/resources/FreeRangeNavegacion.feature:25)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@name,'Moneda origen')]"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4de88409d7f4eeebc2cf8c09b1ab7203, findElement {using=xpath, value=/html/body/div[4]/div[1]/section/div[1]/div[1]/one-appnav/div/one-app-nav-bar/nav/div/one-app-nav-bar-item-root[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\ALEJAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64186}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64186/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+Command: [c1c8c92b48e4bdf2a6dbcbd7780cb760, findElement {using=xpath, value=//button[contains(@name,'Moneda origen')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\ALEJAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55297/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c1c8c92b48e4bdf2a6dbcbd7780cb760
+	at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -527,8 +506,8 @@ Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
 	at pages.BasePage.Find(BasePage.java:58)
 	at pages.BasePage.clickElement(BasePage.java:62)
-	at pages.Op_Cuentas_vs_Cuentas_STCMod.opCAhorro_Caja(Op_Cuentas_vs_Cuentas_STCMod.java:58)
-	at steps.StepsDefinition.createNewOpCAhoCaja(StepsDefinition.java:55)
+	at pages.Op_Cuentas_vs_Cuentas_CTCMod.Caja_CCMN_Caja_CCMX(Op_Cuentas_vs_Cuentas_CTCMod.java:79)
+	at steps.StepsDefinition.Caja_CCMN_Caja_CCMX(StepsDefinition.java:60)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -605,58 +584,6 @@ Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
 						</div>
 					</div>
 				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.NoSuchWindowException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>feb. 19, 2025 02:57:39 p. m.</td>
-										<td class='linked' test-id='6'>steps.Oportunidad.tearDown(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=132.0.6834.111)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4de88409d7f4eeebc2cf8c09b1ab7203, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\ALEJAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64186}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64186/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:330)
-	at steps.Oportunidad.tearDown(Oportunidad.java:20)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
 			</ul>
 		</div>
 	</div>
@@ -692,19 +619,19 @@ Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>feb. 19, 2025 02:57:05 p. m.</div>
+					<div class='panel-lead'>feb. 27, 2025 09:17:50 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>feb. 19, 2025 02:57:39 p. m.</div>
+			 		<div class='panel-lead'>feb. 27, 2025 09:18:43 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 34.500</div>
+					<div class='panel-lead'>00 00 53.141</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -744,7 +671,7 @@ Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Cahorro_Caja</td>
+							<td>@Caja_CCMN_Caja_CCMX</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -779,8 +706,8 @@ Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
 				skipChild: 0,
 				infoChild: 0,
 				grandChildCount: 4,
-				passGrandChild: 2,
-				failGrandChild: 2,
+				passGrandChild: 3,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
@@ -791,7 +718,7 @@ Session ID: 4de88409d7f4eeebc2cf8c09b1ab7203
 		
 		<script>
 			var timeline = {
-			        "Compra Venta COMEX":33.893
+			        "Compra Venta COMEX":52.239
 			};
 		</script>
 		
